@@ -333,27 +333,12 @@ button:active {
     box-shadow: 0 6px 15px rgba(0,0,0,0.25);
     cursor: pointer;
 }
-/*grillas responsivas*/
 @media (min-width: 992px) {
     .section-fotos .asientos img {
         max-width: 80%;
         margin: 0 auto;
     }
 }
-@media (max-width: 768px) {
-    section .muebles-grilla {
-        grid-template-columns: 1fr;
-    }
-
-    section .fotos-muebles {
-        grid-template-columns: 1fr;
-    }
-
-    .section-fotos .asientos {
-        grid-template-columns: 1fr;
-    }
-}
-
 
 /*estilos del footer*/
 footer {
@@ -389,8 +374,7 @@ footer p {
 footer a:hover {
     color: rgb(74, 116, 91);
 
-} 
-/* responsivo footer */
+}
 @media (max-width: 600px) {
     footer {
         flex-direction: column;
@@ -405,6 +389,20 @@ footer a:hover {
 @media (max-width: 600px) {
     .redes-sociales a img {
         width: 25px;
+    }
+}
+/*estilos responsivos*/
+@media (max-width: 768px) {
+    section .muebles-grilla {
+        grid-template-columns: 1fr;
+    }
+
+    section .fotos-muebles {
+        grid-template-columns: 1fr;
+    }
+
+    .section-fotos .asientos {
+        grid-template-columns: 1fr;
     }
 }
 
