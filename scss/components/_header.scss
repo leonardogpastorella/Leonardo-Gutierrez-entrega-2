@@ -1,5 +1,8 @@
+@use '../base/variables';
+
+
 .mi-header {
-    background-color: $color-primario;
+    background-color: variables.$color-primario;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,60 +16,63 @@
         width: 300px;
     }
 
-    .nav-container {
-        .nav-menu {
-            ul {
-                display: flex;
-                align-items: center;
-                gap: 20px;
-                list-style: none;
+    .nav-container { 
+    .nav-menu {
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            list-style: none;
 
-                li {
-                    position: relative;
+            li {
+                position: relative;
 
-                    a {
-                        font-family: "Nunito Sans", sans-serif;
-                        font-size: 1.2rem;
-                        font-weight: 700;
-                        text-decoration: none;
-                        color: black;
+                a {
+                    font-family: "Nunito Sans", sans-serif;
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    text-decoration: none;
+                    color: black;
 
-                        &:hover {
-                            color: $color-terciario;
-                        }
-                    }
-                }
-
-                /* ----- SUBMENU ----- */
-                li.submenu {
-                    > ul {
-                        display: none;
-                        position: absolute;
-                        top: 100%;
-                        left: 0;
-                        background-color: $color-primario;
-                        border-radius: 4px;
-                        box-shadow: 0 0 10px $color-box-shadow;
-                        min-width: 150px;
-                        padding: 0;
-                        z-index: 9999;
-
-                        li {
-                            padding: 10px;
-
-                            a {
-                                padding: 10px 15px;
-                                display: block;
-                            }
-                        }
+                    &:hover {
+                        color: variables.$color-terciario;
                     }
                 }
             }
 
-            /* ESTE ES EL FIX */
+            /* ----- SUBMENU ----- */
+            li.submenu {
 
+                /* ABRE el submenu en desktop */
+                &:hover > ul {
+                    display: block;
+                }
+
+                > ul {
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    background-color: variables.$color-primario;
+                    border-radius: 4px;
+                    box-shadow: 0 0 10px variables.$color-box-shadow;
+                    min-width: 150px;
+                    padding: 0;
+                    z-index: 9999;
+
+                    li {
+                        padding: 10px;
+
+                        a {
+                            padding: 10px 15px;
+                            display: block;
+                        }
+                    }
+                }
+            }
         }
     }
+}
 }
 
 /* Hamburguesa */
