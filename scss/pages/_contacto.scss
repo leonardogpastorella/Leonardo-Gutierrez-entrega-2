@@ -1,12 +1,13 @@
 /*estilo del formulario de contacto*/
+@use '../base/variables';
 .formulario{
     .contacto {
-        background-color: rgb(219, 216, 200);
+        background-color: variables.$color-primario;
         text-align: center;
         font-family: "Nunito Sans", sans-serif;
         color: black;
         padding: 2rem;
-        border: rgb(12, 63, 55) 2px solid;
+        border: variables.$color-border 2px solid;
         max-width: 400px;
         margin: 0 auto;
             ul { input:focus-visible {

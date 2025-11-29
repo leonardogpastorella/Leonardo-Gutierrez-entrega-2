@@ -1,3 +1,4 @@
+@use '../base/variables';
 /*css reset*/
 * {
     margin: 0;
@@ -24,7 +25,7 @@ body {
         "main"
         "footer";
     min-height: 100vh;
-    background-color: darkgray;
+    background-color: variables.$color-secundario;
     .main-container {
         min-height: 70vh;
         margin: 2rem;

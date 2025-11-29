@@ -1,20 +1,13 @@
-/*seccion grilla pag. muebles */
 @use '../base/variables';
-.muebles-fotos{
-    .container-fotosmuebles{
+section{
+    .foto-taller{
         img {
             border: variables.$color-border 2px solid;
             border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
             transition: transform 0.35s ease, box-shadow 0.35s ease;
             border-radius: 8px;
-        &:hover {
-            transform: scale(1.05);
-            box-shadow: variables.$color-box-shadow;
-            cursor: pointer;
-            }
+            
         }
     }
 }
-
-
