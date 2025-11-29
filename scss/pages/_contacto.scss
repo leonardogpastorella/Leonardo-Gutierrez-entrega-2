@@ -1,0 +1,33 @@
+/*estilo del formulario de contacto*/
+.formulario{
+    .contacto {
+        background-color: rgb(219, 216, 200);
+        text-align: center;
+        font-family: "Nunito Sans", sans-serif;
+        color: black;
+        padding: 2rem;
+        border: rgb(12, 63, 55) 2px solid;
+        max-width: 400px;
+        margin: 0 auto;
+            ul { input:focus-visible {
+                outline: 3px solid rgb(12, 63, 55);
+                outline-offset: 2px;
+                border-color: rgb(12, 63, 55);
+            }
+        }
+            .mensaje{
+                button:active {
+                    background-color: rgb(12, 63, 55);
+                    transform: scale(0.95);
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+

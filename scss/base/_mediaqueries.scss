@@ -1,0 +1,112 @@
+/* NAV */
+@media (max-width: 991px) {
+    .mi-header {
+        .hamburguesa {
+            display: block;
+        }
+
+        .nav-menu {
+            display: none;
+
+            ul {
+                flex-direction: column;
+                background-color: rgb(219, 216, 200);
+                padding: 20px;
+                position: absolute;
+                top: 80px;
+                right: 0;
+                width: 70%;
+            }
+        }
+    }
+}
+
+/* Logo responsive */
+@media (max-width: 600px) {
+    .mi-header {
+        .logo-header {
+            img {
+                width: 180px;
+            }
+        }
+    }
+}
+
+/* MAIN */
+@media (max-width: 600px) {
+    section {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    main {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/* Grilla INDEX para desktop */
+@media (min-width: 992px) {
+    section {
+        .muebles-grilla img {
+            max-width: 80%;
+            margin: 0 auto;
+        }
+    }
+}
+
+/* Estilos responsivos grillas (mobile/tablet) */
+@media (max-width: 768px) {
+    section {
+        .muebles-grilla {
+            grid-template-columns: 1fr;
+        }
+
+        .fotos-muebles {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .section-fotos {
+        .asientos {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+/* Contacto */
+@media (max-width: 768px) {
+    .contacto {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+/* Grilla asientos solo desktop */
+@media (min-width: 992px) {
+    .section-fotos {
+        .asientos img {
+            max-width: 80%;
+            margin: 0 auto;
+        }
+    }
+}
+
+/* footer */
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .redes-sociales {
+        text-align: center;
+        margin-top: 1rem;
+
+        a {
+            img {
+                width: 25px;
+            }
+        }
+    }
+}
