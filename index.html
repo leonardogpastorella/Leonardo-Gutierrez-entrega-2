@@ -117,6 +117,29 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!--menu hamburguesa-->
+    <script>
+    const btnMenu = document.querySelector(".hamburguesa");
+const nav = document.querySelector(".nav-container");
+const body = document.querySelector("body");
+const submenu = document.querySelector(".submenu");
+const submenuLink = document.querySelector(".submenu a"); // Selecciona directamente el enlace 'Muebles'
+
+btnMenu.addEventListener("click", () => {
+    nav.classList.toggle("active");
+    body.classList.toggle("no-scroll"); 
+});
+
+if (submenuLink && submenu) {
+    submenuLink.addEventListener("click", (e) => {
+        if (window.innerWidth <= 991) {
+            e.preventDefault(); 
+            submenu.classList.toggle("open");
+        }
+    });
+}
+</script>
 </body>
 
 </html>
