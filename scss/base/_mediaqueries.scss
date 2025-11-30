@@ -1,29 +1,62 @@
-/* ================================
-   MENÚ / HEADER
-==================================*/
+
+/*menu*/
 @media (max-width: 991px) {
-    .hamburguesa {
-        display: block;
-    }
+    .mi-header {
+        .hamburguesa {
+            display: block; // Muestra el ícono
+            font-size: 32px;
+        }
 
-    .mi-header .nav-menu {
-        display: none; // oculto el menú hasta que se haga toggle con JS
-    }
+        .nav-container {
+            // PROPIEDADES CLAVE para Menú Fijo/Overlay (para no romper el header)
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(219, 216, 200, 0.98);
+            padding: 80px 0 0 0;
+            z-index: 1050;
 
-    .mi-header .nav-menu ul {
-        flex-direction: column;
-        background-color: rgb(219, 216, 200);
-        padding: 20px;
-        position: absolute;
-        top: 80px;
-        right: 0;
-        width: 70%;
-        z-index: 10;
+            transform: translateX(100%); // Oculto inicialmente
+            transition: transform 0.3s ease-out;
+            overflow-y: auto;
+
+            .nav-menu ul {
+                display: flex; // Fuerza la visualización
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0;
+
+                li {
+                    width: 100%;
+                    padding: 10px 20px;
+
+                    // Desactiva el estilo de submenú desktop
+                    &.submenu > ul {
+                        display: none !important;
+                        position: static;
+                        box-shadow: none;
+                        background: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* -------------------------
+   BREAKPOINT: max-width 600px (LOGO MÁS PEQUEÑO)
+------------------------- */
+@media (max-width: 600px) {
+    .mi-header .logo-header img {
+        width: 180px;
     }
 }
 
 /* ================================
-   LOGO
+    LOGO
 ==================================*/
 @media (max-width: 600px) {
     .mi-header .logo-header img {
