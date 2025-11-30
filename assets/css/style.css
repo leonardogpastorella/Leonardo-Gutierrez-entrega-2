@@ -156,7 +156,10 @@ footer .redes-sociales a:hover {
   color: rgb(74, 116, 91);
 }
 
-/*menu*/
+/*MENU HAMBURGUESA & HEADER*/
+.mi-header .hamburguesa {
+  display: none;
+}
 @media (max-width: 991px) {
   .mi-header .hamburguesa {
     display: block;
@@ -193,86 +196,103 @@ footer .redes-sociales a:hover {
     background: none;
   }
 }
-/* -------------------------
-   BREAKPOINT: max-width 600px (LOGO MÁS PEQUEÑO)
-------------------------- */
+.mi-header {
+  /* LOGO — max-width 600 */
+}
 @media (max-width: 600px) {
   .mi-header .logo-header img {
     width: 180px;
   }
 }
-/* ================================
-    LOGO
-==================================*/
-@media (max-width: 600px) {
-  .mi-header .logo-header img {
-    width: 180px;
+
+/* MAIN & SECTIONS */
+@media (max-width: 768px) {
+  body .main-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  body .main-container .section {
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+    border-radius: 0;
   }
 }
-/* ================================
-   MAIN Y SECCIONES
-==================================*/
+
 @media (max-width: 600px) {
   main {
     margin: 0;
     padding: 0;
   }
+}
+
+@media (max-width: 600px) {
   section {
     margin: 1rem;
     padding: 1rem;
   }
 }
-/* ================================
-   GRILLAS & FOTOS
-==================================*/
-/* Desktop grande */
+section {
+  /* Grilla muebles */
+}
+@media (max-width: 768px) {
+  section .muebles-grilla {
+    grid-template-columns: 1fr;
+  }
+}
 @media (min-width: 992px) {
   section .muebles-grilla img {
     max-width: 80%;
     margin: 0 auto;
   }
+}
+section {
+  /* Grilla fotos muebles */
+}
+@media (max-width: 768px) {
+  section .fotos-muebles {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*  SECCIÓN FOTOS ASIENTOS */
+@media (max-width: 768px) {
+  .section-fotos .asientos {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 992px) {
   .section-fotos .asientos img {
     max-width: 80%;
     margin: 0 auto;
   }
 }
-/* Mobile / Tablet */
-@media (max-width: 768px) {
-  section .muebles-grilla {
-    grid-template-columns: 1fr;
-  }
-  section .fotos-muebles {
-    grid-template-columns: 1fr;
-  }
-  .section-fotos .asientos {
-    grid-template-columns: 1fr;
-  }
-}
-/* ================================
-   FORMULARIO CONTACTO
-==================================*/
+
+/*FORMULARIO CONTACTO */
 @media (max-width: 768px) {
   .contacto {
     margin-left: 20px;
     margin-right: 20px;
   }
 }
-/* ================================
-   FOOTER
-==================================*/
+
+/* FOOTER*/
 @media (max-width: 600px) {
   footer {
     flex-direction: column;
     text-align: center;
   }
-  .redes-sociales {
+  footer .redes-sociales {
     text-align: center;
     margin-top: 1rem;
   }
-  .redes-sociales a img {
+  footer .redes-sociales a img {
     width: 25px;
   }
 }
+
 /* grilla index */
 section .muebles-grilla {
   display: grid;
