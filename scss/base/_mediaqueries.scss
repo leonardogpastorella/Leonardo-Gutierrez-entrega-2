@@ -26,6 +26,10 @@
             transition: transform 0.3s ease-out;
             overflow-y: auto;
 
+            &.active {
+                transform: translateX(0);
+            }
+
             .nav-menu {
                 ul {
                     display: flex;
@@ -43,13 +47,19 @@
                             box-shadow: none;
                             background: none;
                         }
+
+                        /*abrir el submenu*/
+                        &.submenu.open > ul {
+                            display: block !important;
+                        }
                     }
                 }
             }
         }
     }
 
-    /* LOGO — max-width 600 */
+
+    /* logo — max-width 600 */
     @media (max-width: 600px) {
         .logo-header img {
             width: 180px;
@@ -57,9 +67,9 @@
     }
 }
 
-/* ========================== */
-/* MAIN & SECTIONS */
-/* ========================== */
+
+/* main y section */
+
 body {
     .main-container {
         @media (max-width: 768px) {
@@ -92,9 +102,9 @@ section {
     }
 }
 
-/* ========================== */
-/* GRILLA MUEBLES */
-/* ========================== */
+
+/* grilla index */
+
 
 .section-muebles .muebles-grilla {
     @media (max-width: 768px) {
@@ -114,9 +124,9 @@ section {
     }
 }
 
-/* ========================== */
-/* SECCIÓN FOTOS ASIENTOS */
-/* ========================== */
+
+/* pag Asientos */
+
 
 .section-fotos {
     .asientos {
@@ -133,9 +143,9 @@ section {
     }
 }
 
-/* ========================== */
-/* FORMULARIO CONTACTO */
-/* ========================== */
+
+/* Formulario CONTACTO */
+
 
 .contacto {
     @media (max-width: 768px) {
@@ -144,9 +154,9 @@ section {
     }
 }
 
-/* ========================== */
-/* FOOTER */
-/* ========================== */
+
+/* Footer */
+
 
 footer {
     @media (max-width: 600px) {

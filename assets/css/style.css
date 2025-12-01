@@ -285,6 +285,9 @@ section .foto-taller img {
     transition: transform 0.3s ease-out;
     overflow-y: auto;
   }
+  .mi-header .nav-container.active {
+    transform: translateX(0);
+  }
   .mi-header .nav-container .nav-menu ul {
     display: flex;
     flex-direction: column;
@@ -301,9 +304,15 @@ section .foto-taller img {
     box-shadow: none;
     background: none;
   }
+  .mi-header .nav-container .nav-menu ul li {
+    /*abrir el submenu*/
+  }
+  .mi-header .nav-container .nav-menu ul li.submenu.open > ul {
+    display: block !important;
+  }
 }
 .mi-header {
-  /* LOGO — max-width 600 */
+  /* logo — max-width 600 */
 }
 @media (max-width: 600px) {
   .mi-header .logo-header img {
@@ -311,9 +320,7 @@ section .foto-taller img {
   }
 }
 
-/* ========================== */
-/* MAIN & SECTIONS */
-/* ========================== */
+/* main y section */
 @media (max-width: 768px) {
   body .main-container {
     width: 100%;
@@ -343,9 +350,7 @@ section .foto-taller img {
   }
 }
 
-/* ========================== */
-/* GRILLA MUEBLES */
-/* ========================== */
+/* grilla index */
 @media (max-width: 768px) {
   .section-muebles .muebles-grilla {
     grid-template-columns: 1fr;
@@ -363,9 +368,7 @@ section .foto-taller img {
     width: 100%;
   }
 }
-/* ========================== */
-/* SECCIÓN FOTOS ASIENTOS */
-/* ========================== */
+/* pag Asientos */
 @media (max-width: 768px) {
   .section-fotos .asientos {
     grid-template-columns: 1fr;
@@ -378,9 +381,7 @@ section .foto-taller img {
   }
 }
 
-/* ========================== */
-/* FORMULARIO CONTACTO */
-/* ========================== */
+/* Formulario CONTACTO */
 @media (max-width: 768px) {
   .contacto {
     margin-left: 20px;
@@ -388,9 +389,7 @@ section .foto-taller img {
   }
 }
 
-/* ========================== */
-/* FOOTER */
-/* ========================== */
+/* Footer */
 @media (max-width: 600px) {
   footer {
     flex-direction: column;
