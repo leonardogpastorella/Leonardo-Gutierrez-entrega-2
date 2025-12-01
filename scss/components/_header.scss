@@ -16,7 +16,7 @@
     }
 
     .nav-container {
-        // Estilos para Desktop
+        //Estilos para Desktop
         .nav-menu ul {
             display: flex;
             align-items: center;
@@ -38,9 +38,9 @@
                     }
                 }
 
-                // ----- SUBMENU (Desktop) -----
+                // submenu 
                 &.submenu {
-                    &:hover > ul { // ABRE el submenu en desktop
+                    &:hover > ul { // Abree el submenu en desktop
                         display: block;
                     }
 
