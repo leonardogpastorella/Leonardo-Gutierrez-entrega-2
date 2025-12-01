@@ -88,6 +88,18 @@ body .main-container .section a {
 .mi-header .nav-container .nav-menu ul li a:hover {
   color: rgb(74, 116, 91);
 }
+.mi-header .nav-container .nav-menu ul .btn-contacto {
+  padding: 8px 16px;
+  background-color: rgb(74, 116, 91); /* color del botón */
+  color: #fff;
+  border-radius: 6px;
+  transition: 0.3s ease;
+  display: inline-block;
+}
+.mi-header .nav-container .nav-menu ul .btn-contacto:hover {
+  transform: scale(1.05);
+  color: white;
+}
 .mi-header .nav-container .nav-menu ul {
   /* ----- SUBMENU ----- */
 }
@@ -274,15 +286,15 @@ section .muebles-grilla img:hover {
 }
 
 /*seccion grilla pag. muebles */
-.muebles-fotos .container-fotosmuebles img {
+.muebles-fotos .container-fotosmuebles div img {
   border: rgb(12, 63, 55) 2px solid;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  transition: transform 0.6s ease, box-shadow 0.35s ease;
   border-radius: 8px;
 }
-.muebles-fotos .container-fotosmuebles img:hover {
-  transform: scale(1.05);
+.muebles-fotos .container-fotosmuebles div img:hover {
+  transform: scale(1.2);
   box-shadow: rgba(0, 0, 0, 0.4);
   cursor: pointer;
 }

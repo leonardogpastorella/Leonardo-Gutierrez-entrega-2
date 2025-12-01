@@ -39,6 +39,19 @@
                     }
                 }
             }
+            .btn-contacto {
+    padding: 8px 16px;
+    background-color: variables.$color-terciario; /* color del botón */
+    color: #fff ;
+    border-radius: 6px;
+    transition: 0.3s ease;
+    display: inline-block;
+    &:hover {
+    transform: scale(1.05);
+    color: white;
+    
+}
+}
 
             /* ----- SUBMENU ----- */
             li.submenu {
