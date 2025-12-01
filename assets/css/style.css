@@ -156,151 +156,17 @@ footer .redes-sociales a:hover {
   color: rgb(74, 116, 91);
 }
 
-/*MENU HAMBURGUESA & HEADER*/
-.mi-header .hamburguesa {
-  display: none;
-}
-@media (max-width: 991px) {
-  .mi-header .hamburguesa {
-    display: block;
-    font-size: 32px;
-  }
-  .mi-header .nav-container {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(219, 216, 200, 0.98);
-    padding: 80px 0 0 0;
-    z-index: 1050;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-out;
-    overflow-y: auto;
-  }
-  .mi-header .nav-container .nav-menu ul {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0;
-  }
-  .mi-header .nav-container .nav-menu ul li {
-    width: 100%;
-    padding: 10px 20px;
-  }
-  .mi-header .nav-container .nav-menu ul li.submenu > ul {
-    display: none !important;
-    position: static;
-    box-shadow: none;
-    background: none;
-  }
-}
-.mi-header {
-  /* LOGO — max-width 600 */
-}
-@media (max-width: 600px) {
-  .mi-header .logo-header img {
-    width: 180px;
-  }
-}
-
-/* MAIN & SECTIONS */
-@media (max-width: 768px) {
-  body .main-container {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  body .main-container .section {
-    width: 100%;
-    margin: 0;
-    padding: 1rem;
-    border-radius: 0;
-  }
-}
-
-@media (max-width: 600px) {
-  main {
-    margin: 0;
-    padding: 0;
-  }
-}
-
-@media (max-width: 600px) {
-  section {
-    margin: 1rem;
-    padding: 1rem;
-  }
-}
-section {
-  /* Grilla muebles */
-}
-@media (max-width: 768px) {
-  section .muebles-grilla {
-    grid-template-columns: 1fr;
-  }
-}
-@media (min-width: 992px) {
-  section .muebles-grilla img {
-    max-width: 80%;
-    margin: 0 auto;
-  }
-}
-section {
-  /* Grilla fotos muebles */
-}
-@media (max-width: 768px) {
-  section .fotos-muebles {
-    grid-template-columns: 1fr;
-  }
-}
-
-/*  SECCIÓN FOTOS ASIENTOS */
-@media (max-width: 768px) {
-  .section-fotos .asientos {
-    grid-template-columns: 1fr;
-  }
-}
-@media (min-width: 992px) {
-  .section-fotos .asientos img {
-    max-width: 80%;
-    margin: 0 auto;
-  }
-}
-
-/*FORMULARIO CONTACTO */
-@media (max-width: 768px) {
-  .contacto {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-}
-
-/* FOOTER*/
-@media (max-width: 600px) {
-  footer {
-    flex-direction: column;
-    text-align: center;
-  }
-  footer .redes-sociales {
-    text-align: center;
-    margin-top: 1rem;
-  }
-  footer .redes-sociales a img {
-    width: 25px;
-  }
-}
-
 /* grilla index */
-section .muebles-grilla {
+.section-muebles .muebles-grilla {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 20px;
   row-gap: 30px;
 }
-section .muebles-grilla img {
+.section-muebles .muebles-grilla div {
+  width: 100%;
+}
+.section-muebles .muebles-grilla img {
   width: 100%;
   height: auto;
   display: block;
@@ -308,10 +174,8 @@ section .muebles-grilla img {
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   transition: transform 0.35s ease, box-shadow 0.35s ease;
-  border: rgb(12, 63, 55) 2px solid;
-  border-radius: 8px;
 }
-section .muebles-grilla img:hover {
+.section-muebles .muebles-grilla img:hover {
   transform: scale(1.1);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
   cursor: pointer;
@@ -384,6 +248,149 @@ section .foto-taller img {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   transition: transform 0.35s ease, box-shadow 0.35s ease;
   border-radius: 8px;
+}
+
+/*MENU HAMBURGUESA & HEADER*/
+.mi-header .hamburguesa {
+  display: none;
+}
+@media (max-width: 991px) {
+  .mi-header .hamburguesa {
+    display: block;
+    font-size: 32px;
+  }
+  .mi-header .nav-container {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(219, 216, 200, 0.98);
+    padding: 80px 0 0 0;
+    z-index: 1050;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-out;
+    overflow-y: auto;
+  }
+  .mi-header .nav-container .nav-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+  .mi-header .nav-container .nav-menu ul li {
+    width: 100%;
+    padding: 10px 20px;
+  }
+  .mi-header .nav-container .nav-menu ul li.submenu > ul {
+    display: none !important;
+    position: static;
+    box-shadow: none;
+    background: none;
+  }
+}
+.mi-header {
+  /* LOGO — max-width 600 */
+}
+@media (max-width: 600px) {
+  .mi-header .logo-header img {
+    width: 180px;
+  }
+}
+
+/* ========================== */
+/* MAIN & SECTIONS */
+/* ========================== */
+@media (max-width: 768px) {
+  body .main-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  body .main-container .section {
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  section {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
+
+/* ========================== */
+/* GRILLA MUEBLES */
+/* ========================== */
+@media (max-width: 768px) {
+  .section-muebles .muebles-grilla {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 992px) {
+  .section-muebles .muebles-grilla img {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .muebles-grilla > div {
+    width: 100%;
+  }
+}
+/* ========================== */
+/* SECCIÓN FOTOS ASIENTOS */
+/* ========================== */
+@media (max-width: 768px) {
+  .section-fotos .asientos {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 992px) {
+  .section-fotos .asientos img {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+/* ========================== */
+/* FORMULARIO CONTACTO */
+/* ========================== */
+@media (max-width: 768px) {
+  .contacto {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+/* ========================== */
+/* FOOTER */
+/* ========================== */
+@media (max-width: 600px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .redes-sociales {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  footer .redes-sociales a img {
+    width: 25px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
