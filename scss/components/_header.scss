@@ -1,5 +1,6 @@
 @use '../base/variables';
 
+
 .mi-header {
     background-color: variables.$color-primario;
     display: flex;
@@ -15,9 +16,9 @@
         width: 300px;
     }
 
-    .nav-container {
-        //Estilos para Desktop
-        .nav-menu ul {
+    .nav-container { 
+    .nav-menu {
+        ul {
             display: flex;
             align-items: center;
             gap: 20px;
@@ -37,8 +38,6 @@
                         color: variables.$color-terciario;
                     }
                 }
-<<<<<<< HEAD
-=======
             }
             .btn-contacto {
     padding: 8px 16px;
@@ -53,59 +52,46 @@
     
 }
 }
->>>>>>> animacion
 
-                // submenu 
-                &.submenu {
-                    &:hover > ul { // Abree el submenu en desktop
-                        display: block;
-                    }
+            /* ----- SUBMENU ----- */
+            li.submenu {
 
-                    > ul {
-                        display: none;
-                        position: absolute;
-                        top: 100%;
-                        left: 0;
-                        background-color: variables.$color-primario;
-                        border-radius: 4px;
-                        box-shadow: 0 0 10px variables.$color-box-shadow;
-                        min-width: 150px;
-                        padding: 0;
-                        z-index: 9999;
+                /* ABRE el submenu en desktop */
+                &:hover > ul {
+                    display: block;
+                }
 
-                        li {
-                            padding: 10px;
+                > ul {
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    background-color: variables.$color-primario;
+                    border-radius: 4px;
+                    box-shadow: 0 0 10px variables.$color-box-shadow;
+                    min-width: 150px;
+                    padding: 0;
+                    z-index: 9999;
 
-                            a {
-                                padding: 10px 15px;
-                                display: block;
-                            }
+                    li {
+                        padding: 10px;
+
+                        a {
+                            padding: 10px 15px;
+                            display: block;
                         }
                     }
                 }
             }
         }
-
-        // CLASE DE UTILIDAD: Permite que el JS abra el submenú en móvil
-        // Corregido: Anidado correctamente para que el selector funcione.
-        .nav-menu ul li.submenu.open {
-            > ul {
-                display: block !important;
-            }
-        }
-    }
-
-    // ----- Hamburguesa (Ícono) -----
-    .hamburguesa {
-        color: black;
-        font-size: 30px;
-        display: none; // Oculto por defecto en desktop
-        cursor: pointer;
-        z-index: 1100;
     }
 }
+}
 
-// CLASE DE UTILIDAD: Aplicada por JS para mostrar el menú principal
-.nav-container.active {
-    transform: translateX(0) !important;
+/* Hamburguesa */
+.hamburguesa {
+    color: black;
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
 }
