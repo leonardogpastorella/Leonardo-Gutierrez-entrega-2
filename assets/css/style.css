@@ -262,13 +262,23 @@ footer .redes-sociales a:hover {
   }
 }
 /* grilla index */
-section .muebles-grilla {
+.main-container .section a .texto-catalogo {
+  color: black;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+.main-container .section a .texto-catalogo:hover {
+  transform: scale(1.05);
+  transition: 0.4s;
+  cursor: pointer;
+}
+.main-container section .muebles-grilla {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 20px;
   row-gap: 30px;
 }
-section .muebles-grilla img {
+.main-container section .muebles-grilla img {
   width: 100%;
   height: auto;
   display: block;
@@ -279,7 +289,7 @@ section .muebles-grilla img {
   border: rgb(12, 63, 55) 2px solid;
   border-radius: 8px;
 }
-section .muebles-grilla img:hover {
+.main-container section .muebles-grilla img:hover {
   transform: scale(1.1);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
   cursor: pointer;
@@ -341,9 +351,17 @@ section .muebles-grilla img:hover {
   outline-offset: 2px;
   border-color: rgb(12, 63, 55);
 }
-.formulario .contacto .mensaje button:active {
-  background-color: rgb(12, 63, 55);
-  transform: scale(0.95);
+.formulario .contacto .mensaje .btn-contacto {
+  padding: 8px 16px;
+  background-color: rgb(74, 116, 91); /* color del botón */
+  color: #fff;
+  border-radius: 6px;
+  transition: 0.3s ease;
+  display: inline-block;
+}
+.formulario .contacto .mensaje .btn-contacto:hover {
+  transform: scale(1.05);
+  color: white;
 }
 
 section .foto-taller img {
