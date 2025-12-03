@@ -253,9 +253,9 @@ footer .redes-sociales a img:hover:hover {
   margin: 0 auto;
 }
 .formulario .contacto ul input:focus-visible {
-  outline: 3px solid rgb(12, 63, 55);
+  outline: 3px solid rgb(74, 116, 91);
   outline-offset: 2px;
-  border-color: rgb(12, 63, 55);
+  border-color: rgb(74, 116, 91);
 }
 .formulario .contacto .mensaje .btn-contacto {
   padding: 8px 16px;
