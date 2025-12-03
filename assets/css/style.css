@@ -184,9 +184,6 @@ footer .redes-sociales a:hover {
   column-gap: 20px;
   row-gap: 30px;
 }
-.section-muebles .muebles-grilla div {
-  width: 100%;
-}
 .section-muebles .muebles-grilla img {
   width: 100%;
   height: auto;
@@ -232,9 +229,6 @@ footer .redes-sociales a:hover {
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.4) 0 4px 10px;
   transition: transform 0.35s ease, box-shadow 0.35s ease;
-  width: 100%;
-  height: auto;
-  display: block;
 }
 .section-fotos .asientos img:hover {
   transform: scale(1.05);
@@ -262,7 +256,7 @@ footer .redes-sociales a:hover {
   padding: 8px 16px;
   background-color: rgb(74, 116, 91); /* color del botón */
   color: #fff;
-  border-radius: 6px;
+  border-radius: 8px;
   transition: 0.3s ease;
   display: inline-block;
 }
