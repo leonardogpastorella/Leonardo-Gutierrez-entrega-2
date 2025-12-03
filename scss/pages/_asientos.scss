@@ -1,4 +1,5 @@
 @use '../base/variables';
+@use '../utilities/mixin';
 .section-fotos {
     .asientos {
     display: grid;
@@ -9,17 +10,9 @@
     margin-right: 40px;
     
         img {
-        width: 100%;
-        height: auto;
-        display: block;
-        border: variables.$color-border 2px solid;
-        border-radius: 8px;
-        box-shadow: variables.$color-box-shadow 0 4px 10px;
-        transition: transform 0.35s ease, box-shadow 0.35s ease;
+        @include mixin.foto-tarjeta();
             &:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
-            cursor: pointer;
+            @include mixin.hover-tarjeta(1.10);
             }
         }
     }

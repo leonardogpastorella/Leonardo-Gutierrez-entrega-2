@@ -1,5 +1,6 @@
 /*seccion grilla pag. muebles */
 @use '../base/variables';
+@use '../utilities/mixin';
 .muebles-fotos{
     .container-fotosmuebles{
         div{
@@ -10,9 +11,7 @@
             transition: transform 0.6s ease, box-shadow 0.35s ease;
             border-radius: 8px;
         &:hover {
-            transform: scale(1.2);
-            box-shadow: variables.$color-box-shadow;
-            cursor: pointer;
+            @include mixin.hover-tarjeta(1.10);
             }
         }
     }

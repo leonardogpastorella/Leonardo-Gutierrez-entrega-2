@@ -1,19 +1,19 @@
-
+@use '../base/variables';
+@use '../utilities/mixin';
 /*estilos del footer*/
 footer {
-    background-color: rgb(219, 216, 200);
+    background-color: variables.$color-primario;
     display: flex;
     padding: 1rem;
     justify-content: space-between;
     align-items: center;
     font-family: "Nunito Sans", sans-serif;
-    color: rgb(0, 0, 0);
     grid-area: footer;
     .derechos{ 
         p{
             text-align: left;
             font-family: "Nunito Sans", sans-serif;
-            color: black;}
+            color: variables.$color-texto;}
         }
     .redes-sociales {
         margin-top: 1rem;
@@ -24,8 +24,10 @@ footer {
             font-size: 20px;
             text-decoration: none;
             border: none;
-            &:hover {
-            color: rgb(74, 116, 91);
+            img {
+                &:hover {
+            @include mixin.hover-tarjeta(1.10);
+            }
             }
         }
     }

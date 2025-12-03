@@ -38,8 +38,8 @@ body .main-container .section {
   font-family: "Nunito Sans", sans-serif;
   color: black;
   background-color: rgb(219, 216, 200);
-  border: #768d80 2px solid;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  border: rgb(74, 116, 91) 2px solid;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 body .main-container .section .encabezado {
   font-family: "Nunito Sans", sans-serif;
@@ -59,7 +59,7 @@ body .main-container .section a .texto-catalogo {
 }
 body .main-container .section a .texto-catalogo:hover {
   transform: scale(1.05);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
   transition: 0.3s;
   cursor: pointer;
 }
@@ -140,7 +140,7 @@ body .main-container .section a .texto-catalogo:hover {
 
 /* Hamburguesa */
 .hamburguesa {
-  color: black;
+  color: rgb(74, 116, 91);
   font-size: 30px;
   display: none;
   cursor: pointer;
@@ -154,7 +154,6 @@ footer {
   justify-content: space-between;
   align-items: center;
   font-family: "Nunito Sans", sans-serif;
-  color: rgb(0, 0, 0);
   grid-area: footer;
 }
 footer .derechos p {
@@ -173,8 +172,10 @@ footer .redes-sociales a {
   text-decoration: none;
   border: none;
 }
-footer .redes-sociales a:hover {
-  color: rgb(74, 116, 91);
+footer .redes-sociales a img:hover:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 
 /* grilla index */
@@ -190,10 +191,10 @@ footer .redes-sociales a:hover {
   display: block;
   border: rgb(12, 63, 55) 2px solid;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.4) 0 4px 10px;
   transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
-.section-muebles .muebles-grilla img:hover {
+.section-muebles .muebles-grilla img:hover:hover {
   transform: scale(1.1);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
   cursor: pointer;
@@ -207,9 +208,9 @@ footer .redes-sociales a:hover {
   transition: transform 0.6s ease, box-shadow 0.35s ease;
   border-radius: 8px;
 }
-.muebles-fotos .container-fotosmuebles div img:hover {
-  transform: scale(1.2);
-  box-shadow: rgba(0, 0, 0, 0.4);
+.muebles-fotos .container-fotosmuebles div img:hover:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
 
@@ -230,8 +231,8 @@ footer .redes-sociales a:hover {
   box-shadow: rgba(0, 0, 0, 0.4) 0 4px 10px;
   transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
-.section-fotos .asientos img:hover {
-  transform: scale(1.05);
+.section-fotos .asientos img:hover:hover {
+  transform: scale(1.1);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }

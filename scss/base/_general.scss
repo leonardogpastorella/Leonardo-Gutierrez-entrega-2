@@ -38,13 +38,13 @@ body {
             padding: 2rem;
             text-align: justify;
             font-family: "Nunito Sans", sans-serif;
-            color: black;
-            background-color: rgb(219, 216, 200);
-            border: #768d80 2px solid;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            color: variables.$color-texto;
+            background-color:variables.$color-primario;
+            border: variables.$color-terciario 2px solid;
+            box-shadow: 0 4px 10px variables.$color-box-shadow;
                 .encabezado {
                     font-family: "Nunito Sans", sans-serif;
-                    color: rgb(12, 63, 55);
+                    color: variables.$color-border;
                     margin-bottom: 2rem;
                     }
                     p{
@@ -55,12 +55,12 @@ body {
                     }     
                     a {
                         text-decoration: none;
-                        color: rgb(12, 63, 55);
+                        color: variables.$color-border;
                         .texto-catalogo {
                             font-weight: bold;
                             &:hover {
                                 transform: scale(1.05);
-                                box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+                                box-shadow: 0 6px 15px variables.$color-box-shadow;
                                 transition: 0.3s;
                                 cursor: pointer;
                     }
