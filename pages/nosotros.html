@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -7,12 +7,13 @@
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <!--Bootstrap CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!--Animate css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!--AOS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <!--CSS-->
+    <!--CSS-->
     <link rel="stylesheet" href="../assets/css/style.css">
     <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,17 +28,17 @@
     <header class="mi-header">
         <div class="logo-header">
             <a href="../index.html">
-                <img src="../assets/img/logo ultimo.png"  data-aos="flip-right" alt="Logo">
+                <img src="../assets/img/logo ultimo.png" data-aos="flip-right" alt="Logo">
             </a>
         </div>
-<!--Menú de Navegación-->
-<div class="nav-container">
-        <nav class="nav-menu">
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li class="submenu">
+        <!--Menú de Navegación-->
+        <div class="nav-container">
+            <nav class="nav-menu">
+                <ul>
+                    <li>
+                        <a href="../index.html">Inicio</a>
+                    </li>
+                    <li class="submenu">
                         <a href="muebles.html">Muebles</a>
                         <ul>
                             <li>
@@ -54,19 +55,19 @@
                             </li>
                         </ul>
                     </li>
-                <li>
-                    <a href="asientos.html">Asientos</a>
-                </li>
-                
-                <li>
-                    <a href="nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="contacto.html" class="btn-contacto" >Contacto</a>
-                </li>
+                    <li>
+                        <a href="asientos.html">Asientos</a>
+                    </li>
 
-            </ul>
-        </nav>
+                    <li>
+                        <a href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html" class="btn-contacto">Contacto</a>
+                    </li>
+
+                </ul>
+            </nav>
         </div>
         <i class="fa-solid fa-bars hamburguesa"></i>
     </header>
@@ -75,7 +76,8 @@
         <section class="section">
 
             <h1 class="encabezado">Sobre Nosotros</h1>
-            <p>En Muebles Farmache, somos una empresa dedicada a la creación y venta de muebles de alta calidad que combinan
+            <p>En Muebles Farmache, somos una empresa dedicada a la creación y venta de muebles de alta calidad que
+                combinan
                 estilo, funcionalidad y durabilidad. Con años de experiencia en la industria del mueble, nos hemos
                 ganado la
                 confianza de nuestros clientes gracias a nuestro compromiso con la excelencia y la satisfacción del
@@ -88,7 +90,8 @@
                 atemporales, nuestra colección está diseñada para transformar cualquier espacio en un ambiente acogedor
                 y
                 elegante.</p>
-            <p>En Muebles Farmache, creemos en la importancia de utilizar materiales de alta calidad y técnicas de fabricación
+            <p>En Muebles Farmache, creemos en la importancia de utilizar materiales de alta calidad y técnicas de
+                fabricación
                 innovadoras para garantizar que cada mueble que ofrecemos no solo sea estéticamente atractivo, sino
                 también
                 resistente y duradero. Nos esforzamos por superar las expectativas de nuestros clientes en cada etapa
@@ -120,28 +123,28 @@
         </div>
 
     </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
-<!--menu hamburguesa-->
+    <!--menu hamburguesa-->
     <script>
-    const btnMenu = document.querySelector(".hamburguesa");
-    const nav = document.querySelector(".nav-container");
-    const submenu = document.querySelector(".submenu");
+        const btnMenu = document.querySelector(".hamburguesa");
+        const nav = document.querySelector(".nav-container");
+        const submenu = document.querySelector(".submenu");
 
-    btnMenu.addEventListener("click", () => {
-        nav.classList.toggle("active");
-    });
+        btnMenu.addEventListener("click", () => {
+            nav.classList.toggle("active");
+        });
 
-    // Submenú en mobile
-    submenu.addEventListener("click", (e) => {
-        if (window.innerWidth <= 768) {
-            e.preventDefault(); 
-            submenu.classList.toggle("open");
-        }
-    });
+        // Submenú en mobile
+        submenu.addEventListener("click", (e) => {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                submenu.classList.toggle("open");
+            }
+        });
     </script>
 
-<!--AOS-->
+    <!--AOS-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script> AOS.init();</script>
 

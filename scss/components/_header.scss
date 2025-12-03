@@ -1,6 +1,6 @@
 @use '../base/variables';
 
-
+/*estilos del header*/
 .mi-header {
     background-color: variables.$color-primario;
     display: flex;
@@ -16,76 +16,79 @@
         width: 300px;
     }
 
-    .nav-container { 
-    .nav-menu {
-        ul {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            list-style: none;
+    .nav-container {
+        .nav-menu {
+            ul {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                list-style: none;
 
-            li {
-                position: relative;
+                li {
+                    position: relative;
 
-                a {
-                    font-family: "Nunito Sans", sans-serif;
-                    font-size: 1.2rem;
-                    font-weight: 700;
-                    text-decoration: none;
-                    color: variables.$color-texto;
+                    a {
+                        font-family: "Nunito Sans", sans-serif;
+                        font-size: 1.2rem;
+                        font-weight: 700;
+                        text-decoration: none;
+                        color: variables.$color-texto;
 
-                    &:hover {
-                        color: variables.$color-terciario;
+                        &:hover {
+                            color: variables.$color-terciario;
+                        }
                     }
                 }
-            }
-            .btn-contacto {
-    padding: 8px 16px;
-    background-color: variables.$color-terciario; /* color del botón */
-    color: #fff ;
-    border-radius: 6px;
-    transition: 0.3s ease;
-    display: inline-block;
-    &:hover {
-    transform: scale(1.05);
-    color: white;
-    
-}
-}
 
-            /* ----- SUBMENU ----- */
-            li.submenu {
+                .btn-contacto {
+                    padding: 8px 16px;
+                    background-color: variables.$color-terciario;
+                    /* color del botón */
+                    color: #fff;
+                    border-radius: 6px;
+                    transition: 0.3s ease;
+                    display: inline-block;
 
-                /* ABRE el submenu en desktop */
-                &:hover > ul {
-                    display: block;
+                    &:hover {
+                        transform: scale(1.05);
+                        color: white;
+
+                    }
                 }
 
-                > ul {
-                    display: none;
-                    position: absolute;
-                    top: 100%;
-                    left: 0;
-                    background-color: variables.$color-primario;
-                    border-radius: 4px;
-                    box-shadow: 0 0 10px variables.$color-box-shadow;
-                    min-width: 150px;
-                    padding: 0;
-                    z-index: 9999;
+                /* ----- SUBMENU ----- */
+                li.submenu {
 
-                    li {
-                        padding: 10px;
+                    /* ABRE el submenu en desktop */
+                    &:hover>ul {
+                        display: block;
+                    }
 
-                        a {
-                            padding: 10px 15px;
-                            display: block;
+                    >ul {
+                        display: none;
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        background-color: variables.$color-primario;
+                        border-radius: 4px;
+                        box-shadow: 0 0 10px variables.$color-box-shadow;
+                        min-width: 150px;
+                        padding: 0;
+                        z-index: 9999;
+
+                        li {
+                            padding: 10px;
+
+                            a {
+                                padding: 10px 15px;
+                                display: block;
+                            }
                         }
                     }
                 }
             }
         }
     }
-}
 }
 
 /* Hamburguesa */

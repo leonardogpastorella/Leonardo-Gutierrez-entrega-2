@@ -1,5 +1,6 @@
 @use '../base/variables';
 @use '../utilities/mixin';
+
 /*estilos del footer*/
 footer {
     background-color: variables.$color-primario;
@@ -9,29 +10,31 @@ footer {
     align-items: center;
     font-family: "Nunito Sans", sans-serif;
     grid-area: footer;
-    .derechos{ 
-        p{
+
+    .derechos {
+        p {
             text-align: left;
             font-family: "Nunito Sans", sans-serif;
-            color: variables.$color-texto;}
+            color: variables.$color-texto;
         }
+    }
+
     .redes-sociales {
         margin-top: 1rem;
         text-align: right;
+
         a {
             margin-left: 10px;
             color: black;
             font-size: 20px;
             text-decoration: none;
             border: none;
+
             img {
                 &:hover {
-            @include mixin.hover-tarjeta(1.10);
-            }
+                    @include mixin.hover-tarjeta(1.10);
+                }
             }
         }
     }
 }
-
-
-

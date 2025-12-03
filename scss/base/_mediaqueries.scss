@@ -1,4 +1,4 @@
-/*MENU HAMBURGUESA & HEADER*/
+/*Hamburguesa y header*/
 .mi-header {
     .hamburguesa {
         display: none;
@@ -41,7 +41,7 @@
                         width: 100%;
                         padding: 10px 20px;
 
-                        &.submenu > ul {
+                        &.submenu>ul {
                             display: none !important;
                             position: static;
                             box-shadow: none;
@@ -49,7 +49,7 @@
                         }
 
                         /*abrir el submenu*/
-                        &.submenu.open > ul {
+                        &.submenu.open>ul {
                             display: block !important;
                         }
                     }
@@ -68,7 +68,7 @@
 }
 
 
-/* main y section */
+/* body, main y seccion */
 
 body {
     .main-container {
@@ -118,9 +118,10 @@ section {
         }
     }
 }
+
 @media (max-width: 768px) {
-    .muebles-grilla > div {
-    width: 100%;
+    .muebles-grilla>div {
+        width: 100%;
     }
 }
 

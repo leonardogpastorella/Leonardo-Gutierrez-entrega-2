@@ -8,12 +8,10 @@
   transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
-@mixin hover-tarjeta(
-  $scale: 1.05,
+@mixin hover-tarjeta($scale: 1.05,
   $shadow-opacity: 0.25,
   $shadow-y: 6px,
-  $shadow-blur: 15px
-) {
+  $shadow-blur: 15px) {
   &:hover {
     transform: scale($scale);
     box-shadow: 0 $shadow-y $shadow-blur rgba(0, 0, 0, $shadow-opacity);

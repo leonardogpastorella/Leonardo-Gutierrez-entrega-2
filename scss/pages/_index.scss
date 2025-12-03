@@ -1,18 +1,19 @@
-
-
 /* grilla index */
 @use '../base/variables';
 @use '../utilities/mixin';
+
 .section-muebles {
     .muebles-grilla {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
-    row-gap: 30px;
-    img {
-        @include mixin.foto-tarjeta();
-        &:hover {
-        @include mixin.hover-tarjeta(1.10);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 30px;
+
+        img {
+            @include mixin.foto-tarjeta();
+
+            &:hover {
+                @include mixin.hover-tarjeta(1.10);
             }
         }
     }

@@ -1,69 +1,5 @@
 @charset "UTF-8";
-/*css reset*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-}
-
-.row {
-  --bs-gutter-x: 1.5rem;
-  --bs-gutter-y: 1.5rem;
-}
-
-/*
-
-/*estilos del main*/
-body {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
-  grid-template-areas: "header" "main" "footer";
-  min-height: 100vh;
-  background-color: darkgray;
-}
-body .main-container {
-  min-height: 70vh;
-  margin: 2rem;
-  padding: 2rem;
-  width: min(1400px, 90%);
-  margin: 0 auto;
-  grid-area: main;
-}
-body .main-container .section {
-  margin: 2rem;
-  padding: 2rem;
-  text-align: justify;
-  font-family: "Nunito Sans", sans-serif;
-  color: black;
-  background-color: rgb(219, 216, 200);
-  border: rgb(74, 116, 91) 2px solid;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-}
-body .main-container .section .encabezado {
-  font-family: "Nunito Sans", sans-serif;
-  color: rgb(12, 63, 55);
-  margin-bottom: 2rem;
-}
-body .main-container .section p:last-of-type {
-  font-weight: bold;
-  color: rgb(49, 51, 77);
-}
-body .main-container .section a {
-  text-decoration: none;
-  color: rgb(12, 63, 55);
-}
-body .main-container .section a .texto-catalogo {
-  font-weight: bold;
-}
-body .main-container .section a .texto-catalogo:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
-  transition: 0.3s;
-  cursor: pointer;
-}
-
+/*estilos del header*/
 .mi-header {
   background-color: rgb(219, 216, 200);
   display: flex;
@@ -99,7 +35,8 @@ body .main-container .section a .texto-catalogo:hover {
 }
 .mi-header .nav-container .nav-menu ul .btn-contacto {
   padding: 8px 16px;
-  background-color: rgb(74, 116, 91); /* color del botón */
+  background-color: rgb(74, 116, 91);
+  /* color del botón */
   color: #fff;
   border-radius: 6px;
   transition: 0.3s ease;
@@ -143,6 +80,72 @@ body .main-container .section a .texto-catalogo:hover {
   color: rgb(74, 116, 91);
   font-size: 30px;
   display: none;
+  cursor: pointer;
+}
+
+/*css reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 1.5rem;
+}
+
+/*
+
+/*estilos del body y main*/
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header" "main" "footer";
+  min-height: 100vh;
+  background-color: darkgray;
+}
+body .main-container {
+  min-height: 70vh;
+  margin: 2rem;
+  padding: 2rem;
+  width: min(1400px, 90%);
+  margin: 0 auto;
+  grid-area: main;
+}
+body .main-container .section {
+  margin: 2rem;
+  padding: 2rem;
+  text-align: justify;
+  font-family: "Nunito Sans", sans-serif;
+  color: black;
+  background-color: rgb(219, 216, 200);
+  border: rgb(74, 116, 91) 2px solid;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  /*estilo del encabezado*/
+}
+body .main-container .section .encabezado {
+  font-family: "Nunito Sans", sans-serif;
+  color: rgb(12, 63, 55);
+  margin-bottom: 2rem;
+}
+body .main-container .section p:last-of-type {
+  font-weight: bold;
+  color: rgb(49, 51, 77);
+}
+body .main-container .section a {
+  text-decoration: none;
+  color: rgb(12, 63, 55);
+}
+body .main-container .section a .texto-catalogo {
+  font-weight: bold;
+}
+body .main-container .section a .texto-catalogo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
   cursor: pointer;
 }
 
@@ -214,6 +217,7 @@ footer .redes-sociales a img:hover:hover {
   cursor: pointer;
 }
 
+/*estilo grilla Asientos*/
 .section-fotos .asientos {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -255,7 +259,8 @@ footer .redes-sociales a img:hover:hover {
 }
 .formulario .contacto .mensaje .btn-contacto {
   padding: 8px 16px;
-  background-color: rgb(74, 116, 91); /* color del botón */
+  background-color: rgb(74, 116, 91);
+  /* color del botón */
   color: #fff;
   border-radius: 8px;
   transition: 0.3s ease;
@@ -266,6 +271,7 @@ footer .redes-sociales a img:hover:hover {
   color: white;
 }
 
+/*estilo pagina nosotros*/
 section .foto-taller img {
   border: rgb(12, 63, 55) 2px solid;
   border-radius: 8px;
@@ -274,7 +280,7 @@ section .foto-taller img {
   border-radius: 8px;
 }
 
-/*MENU HAMBURGUESA & HEADER*/
+/*Hamburguesa y header*/
 .mi-header .hamburguesa {
   display: none;
 }
@@ -332,7 +338,7 @@ section .foto-taller img {
   }
 }
 
-/* main y section */
+/* body, main y seccion */
 @media (max-width: 768px) {
   body .main-container {
     width: 100%;

@@ -1,22 +1,22 @@
 @use '../base/variables';
 @use '../utilities/mixin';
+/*estilo grilla Asientos*/
+
 .section-fotos {
     .asientos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
-    row-gap: 30px;
-    margin-left: 40px;
-    margin-right: 40px;
-    
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 30px;
+        margin-left: 40px;
+        margin-right: 40px;
+
         img {
-        @include mixin.foto-tarjeta();
+            @include mixin.foto-tarjeta();
+
             &:hover {
-            @include mixin.hover-tarjeta(1.10);
+                @include mixin.hover-tarjeta(1.10);
             }
         }
     }
 }
-
-
-

@@ -1,6 +1,7 @@
 /*estilo del formulario de contacto*/
 @use '../base/variables';
-.formulario{
+
+.formulario {
     .contacto {
         background-color: variables.$color-primario;
         text-align: center;
@@ -10,33 +11,30 @@
         border: variables.$color-border 2px solid;
         max-width: 400px;
         margin: 0 auto;
-            ul { input:focus-visible {
+
+        ul {
+            input:focus-visible {
                 outline: 3px solid rgb(12, 63, 55);
                 outline-offset: 2px;
                 border-color: rgb(12, 63, 55);
             }
         }
-            .mensaje{
-                .btn-contacto {
+
+        .mensaje {
+            .btn-contacto {
                 padding: 8px 16px;
-                background-color: variables.$color-terciario; /* color del botón */
-                color: #fff ;
+                background-color: variables.$color-terciario;
+                /* color del botón */
+                color: #fff;
                 border-radius: 8px;
                 transition: 0.3s ease;
                 display: inline-block;
+
                 &:hover {
-                transform: scale(1.05);
-                color: white;
+                    transform: scale(1.05);
+                    color: white;
                 }
-            }   
+            }
         }
     }
 }
-
-
-
-
-
-
-
-
