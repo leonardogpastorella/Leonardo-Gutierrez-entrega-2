@@ -1,8 +1,6 @@
 /*estilo del formulario de contacto*/
-
-@use 'sass:map';
+@use '../utilities/extended';
 @use '../base/variables';
-@use '../utilities/maps' as mapa;
 
 
 .formulario {
@@ -26,19 +24,8 @@
 
         .mensaje {
             .btn-contacto {
-                padding: 8px 16px;
-                background-color: map.get(mapa.$colores, color-terciario);
-                /* color del botón */
-                color: #fff;
-                border-radius: 8px;
-                transition: 0.3s ease;
-                display: inline-block;
-
-                &:hover {
-                    transform: scale(1.05);
-                    color: white;
+        @extend .btn;
                 }
             }
         }
     }
-}
