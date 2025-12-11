@@ -1,5 +1,7 @@
 /*estilo del formulario de contacto*/
+@use '../utilities/extended';
 @use '../base/variables';
+
 
 .formulario {
     .contacto {
@@ -22,19 +24,8 @@
 
         .mensaje {
             .btn-contacto {
-                padding: 8px 16px;
-                background-color: variables.$color-terciario;
-                /* color del botón */
-                color: #fff;
-                border-radius: 8px;
-                transition: 0.3s ease;
-                display: inline-block;
-
-                &:hover {
-                    transform: scale(1.05);
-                    color: white;
+        @extend .btn;
                 }
             }
         }
     }
-}

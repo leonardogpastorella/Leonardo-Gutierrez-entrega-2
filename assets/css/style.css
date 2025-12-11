@@ -1,4 +1,17 @@
 @charset "UTF-8";
+.btn, .formulario .contacto .mensaje .btn-contacto, .mi-header .nav-container .nav-menu ul .btn-contacto {
+  padding: 8px 16px;
+  background-color: rgb(74, 116, 91);
+  color: #fff;
+  border-radius: 8px;
+  transition: 0.3s ease;
+  display: inline-block;
+}
+.btn:hover, .formulario .contacto .mensaje .btn-contacto:hover, .mi-header .nav-container .nav-menu ul .btn-contacto:hover {
+  transform: scale(1.05);
+  color: white;
+}
+
 /*estilos del header*/
 .mi-header {
   background-color: rgb(219, 216, 200);
@@ -32,19 +45,6 @@
 }
 .mi-header .nav-container .nav-menu ul li a:hover {
   color: rgb(74, 116, 91);
-}
-.mi-header .nav-container .nav-menu ul .btn-contacto {
-  padding: 8px 16px;
-  background-color: rgb(74, 116, 91);
-  /* color del botón */
-  color: #fff;
-  border-radius: 6px;
-  transition: 0.3s ease;
-  display: inline-block;
-}
-.mi-header .nav-container .nav-menu ul .btn-contacto:hover {
-  transform: scale(1.05);
-  color: white;
 }
 .mi-header .nav-container .nav-menu ul {
   /* ----- SUBMENU ----- */
@@ -257,20 +257,6 @@ footer .redes-sociales a img:hover:hover {
   outline-offset: 2px;
   border-color: rgb(12, 63, 55);
 }
-.formulario .contacto .mensaje .btn-contacto {
-  padding: 8px 16px;
-  background-color: rgb(74, 116, 91);
-  /* color del botón */
-  color: #fff;
-  border-radius: 8px;
-  transition: 0.3s ease;
-  display: inline-block;
-}
-.formulario .contacto .mensaje .btn-contacto:hover {
-  transform: scale(1.05);
-  color: white;
-}
-
 /*estilo pagina nosotros*/
 section .foto-taller img {
   border: rgb(12, 63, 55) 2px solid;
