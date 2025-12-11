@@ -1,24 +1,24 @@
 /*estilo del formulario de contacto*/
 @use '../utilities/extended';
 @use '../base/variables';
-
+@use '../utilities/maps' ;
 
 .formulario {
     .contacto {
-        background-color: map.get(mapa.$colores, color-primario);
+        background-color: variables.$color-primario;
         text-align: center;
         font-family: "Nunito Sans", sans-serif;
         color: black;
         padding: 2rem;
-        border: map.get(mapa.$colores, color-border) 2px solid;
+        border: variables.$color-border 2px solid;
         max-width: 400px;
         margin: 0 auto;
 
         ul {
             input:focus-visible {
-                outline: 3px solid map.get(mapa.$colores, color-terciario);
+                outline: variables.$color-terciario;
                 outline-offset: 2px;
-                border-color: map.get(mapa.$colores, color-terciario);
+                border-color: variables.$color-terciario;
             }
         }
 
