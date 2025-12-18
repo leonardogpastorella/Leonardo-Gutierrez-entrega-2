@@ -1,12 +1,15 @@
+
+@import '../base/maps';
+@import '../utilities/mixin';
+
+
 /*Hamburguesa y header*/
 .mi-header {
     .hamburguesa {
         display: none;
     }
 
-
-
-    @media (max-width: 991px) {
+    @include break("desktop") { 
         .hamburguesa {
             display: block;
             font-size: 32px;
@@ -26,8 +29,8 @@
             transition: transform 0.3s ease-out;
             overflow-y: auto;
 
-            &.active {
-                transform: translateX(0);
+            &.active { 
+                transform: translateX(0); 
             }
 
             .nav-menu {
@@ -58,21 +61,18 @@
         }
     }
 
-
     /* logo — max-width 600 */
-    @media (max-width: 600px) {
+    @include break("mobile") {
         .logo-header img {
             width: 180px;
         }
     }
 }
 
-
 /* body, main y seccion */
-
 body {
     .main-container {
-        @media (max-width: 768px) {
+        @include break("tablet") {
             width: 100%;
             max-width: 100%;
             margin: 0;
@@ -89,33 +89,23 @@ body {
 }
 
 main {
-    @media (max-width: 600px) {
+    @include break("mobile") {
         margin: 0;
         padding: 0;
     }
 }
 
 section {
-    @media (max-width: 600px) {
+    @include break("mobile") {
         margin: 1rem;
         padding: 1rem;
     }
 }
 
-
 /* grilla index */
-
-
 .section-muebles .muebles-grilla {
-    @media (max-width: 768px) {
+    @include break("tablet") {
         grid-template-columns: 1fr;
-    }
-
-    @media (min-width: 992px) {
-        img {
-            max-width: 80%;
-            margin: 0 auto;
-        }
     }
 }
 
@@ -125,42 +115,26 @@ section {
     }
 }
 
-
 /* pag Asientos */
-
-
 .section-fotos {
     .asientos {
-        @media (max-width: 768px) {
+        @include break("tablet") {
             grid-template-columns: 1fr;
-        }
-
-        img {
-            @media (min-width: 992px) {
-                max-width: 80%;
-                margin: 0 auto;
-            }
         }
     }
 }
 
-
 /* Formulario CONTACTO */
-
-
 .contacto {
-    @media (max-width: 768px) {
+    @include break("tablet") {
         margin-left: 20px;
         margin-right: 20px;
     }
 }
 
-
 /* Footer */
-
-
 footer {
-    @media (max-width: 600px) {
+    @include break("mobile") {
         flex-direction: column;
         text-align: center;
 

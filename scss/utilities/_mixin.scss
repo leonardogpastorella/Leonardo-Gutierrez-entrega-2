@@ -1,3 +1,6 @@
+@import '../base/maps';
+
+
 @mixin foto-tarjeta($border-color: rgb(12, 63, 55), $radius: 8px, $shadow-opacity: 0.4) {
   width: 100%;
   height: auto;
@@ -16,5 +19,12 @@
     transform: scale($scale);
     box-shadow: 0 $shadow-y $shadow-blur rgba(0, 0, 0, $shadow-opacity);
     cursor: pointer;
+  }
+}
+
+
+@mixin break($dispositivo) {
+  @media (max-width: map-get($breakpoints, $dispositivo)) {
+    @content;
   }
 }
