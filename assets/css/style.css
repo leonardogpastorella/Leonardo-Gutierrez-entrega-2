@@ -378,6 +378,9 @@ section .foto-taller img {
   .contacto {
     margin-left: 20px;
     margin-right: 20px;
+    width: 95%;
+    max-width: 400px;
+    margin: 0 auto;
   }
 }
 
